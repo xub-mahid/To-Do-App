@@ -1,20 +1,47 @@
-<<<<<<< HEAD
-# React + Vite
+# 📝 ToDo App (React + Tailwind CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Project Overview
+This is a simple **ToDo App** built using **React.js** and **Tailwind CSS**.  
+It allows users to add, display, and delete tasks easily.  
+The app demonstrates React fundamentals such as **useState**, **event handling**, and **list rendering**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Features
+✅ Add new tasks  
+✅ Display all tasks dynamically  
+✅ Delete any task  
+✅ Prevent form reload on submit  
+✅ Styled with Tailwind CSS  
+✅ Clean and responsive UI  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Tech Stack
+- **Frontend:** React.js  
+- **Styling:** Tailwind CSS  
+- **Language:** JavaScript (ES6)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# To-Do-App-
->>>>>>> fd12a7f523f214fe4a84c63eeca532cf203bcb8a
+## 📂 Project Structure
+💻 Code Explanation
+🧠 useState Hooks
+const [todo, setTodo] = useState("")     // Single task input
+const [list, setList] = useState([])     // All tasks list
+
+✍️ Add Task Function
+const addTask = () => {
+  if (todo !== "") {
+    setList([...list, todo])
+    setTodo("")
+  }
+}
+
+❌ Delete Task Function
+const deleteF = (index) => {
+  const updatedList = list.filter((_, i) => i !== index)
+  setList(updatedList)
+}
+
+
