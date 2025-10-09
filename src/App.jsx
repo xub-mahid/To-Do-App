@@ -36,7 +36,7 @@ function ToDoApp(){
                     list.map((taske,index)=>
                       <li key = {index} className='border-b border-black-50 text-center h-15 font-bold  '>
                         <span className=' relative top-7 '>{taske}</span>
-                       <div className=''> <button onClick={()=>deleteF(index)} className='transform translate-x-50 font-normal bg-red-600 px-3 py-1 text-white  text-sm rounded'>Delet</button></div>
+                       <div className=''> <button onClick={()=>deleteF(index)} className='transform translate-x-50 font-normal bg-red-600 px-3 py-1 text-white  text-sm rounded'>Delete</button></div>
                     
                       </li>
                     )
